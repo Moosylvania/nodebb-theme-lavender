@@ -122,7 +122,7 @@
 		  </ul>
 		</nav>
 	</div>
-	<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu" component="navbar">
+	<div class="navbar navbar-default header" role="navigation" id="header-menu" component="navbar">
 		<div class="loading-bar"></div>
 		<div class="container">
 			<!-- IMPORT partials/menu.tpl -->
