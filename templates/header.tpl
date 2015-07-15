@@ -6,15 +6,7 @@
 	<!-- BEGIN metaTags -->
 	{function.buildMetaTag}
 	<!-- END metaTags -->
-
-	<link rel="apple-touch-icon" sizes="152x152" href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/apple-touch-icon-152x152.png?13316516152306922645">
-	  <link rel="icon" type="image/png" href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/favicon-192x192.png?13316516152306922645" sizes="192x192">
-	  <link rel="icon" type="image/png" href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/favicon-160x160.png?13316516152306922645" sizes="160x160">
-	  <link rel="icon" type="image/png" href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/favicon-96x96.png?13316516152306922645" sizes="96x96">
-	  <link rel="icon" type="image/png" href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/favicon-16x16.png?13316516152306922645" sizes="16x16">
-	  <link rel="icon" type="image/png" href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/favicon-32x32.png?13316516152306922645" sizes="32x32">
-
-
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Signika:400,300,600,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="{relative_path}/stylesheet.css?{css-buster}" />
@@ -63,7 +55,7 @@
 			}
 		</style>
 		<!-- ENDIF useCustomCSS -->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 </head>
 
 <body class="template-page navigation-below-header">
