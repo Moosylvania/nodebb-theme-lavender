@@ -8,11 +8,11 @@
 	<!-- END metaTags -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Signika:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="{relative_path}/stylesheet.css?{css-buster}" />
 	<link href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/video-js.css?13316516152306922645" rel="stylesheet" type="text/css"  media="all"  />
 	  <link href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/videojs-sublime-skin.css?13316516152306922645" rel="stylesheet" type="text/css"  media="all"  />
 	  <link href="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/theme.scss.css?13316516152306922645" rel="stylesheet" type="text/css"  media="all"  />
-
-	<link rel="stylesheet" type="text/css" href="{relative_path}/stylesheet.css?{css-buster}" />
 	<!-- BEGIN linkTags -->
 	<link<!-- IF linkTags.link --> link="{linkTags.link}"
 		<!-- ENDIF linkTags.link -->
