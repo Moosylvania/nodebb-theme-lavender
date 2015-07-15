@@ -40,10 +40,6 @@
 			};
 		</script>
 		<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
-		<script src="//cdn.shopify.com/s/assets/themes_support/option_selection-87ab3c47afdd94e7292ed3925ae1bc31.js" type="text/javascript"></script>
-
-        <script src="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/plugins.js?13316516152306922645" type="text/javascript"></script>
-        <script src="//cdn.shopify.com/s/files/1/0713/2195/t/2/assets/site.js?13316516152306922645" type="text/javascript"></script>
 
 		<!-- IMPORT partials/requirejs-config.tpl -->
 
@@ -72,7 +68,7 @@
 			</div>
 			<div class="header-tools">
 				<div class="header-actions">
-					<span class="drawer-toggle"></span>
+					<p></p>
 				</div>
 			</div>
 		</header>

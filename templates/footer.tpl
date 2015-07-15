@@ -1,11 +1,11 @@
             </div>
-        <div class="footer-wrapper ">
-          <footer class="main-footer showing-2-lists">
+        <div class="footer-wrapper" style="border-top:1px solid #d7dcde;">
+          <footer class="main-footer showing-2-lists" style="border-top:0;">
 
 
-            <div class="footer-link-list footer">
+            <div class="footer-link-list footer" style="margin-top:0; text-align:left;">
 
-                <h4>NAVIGATE</h4>
+                <h4 style="margin-top:0; text-align:left;">NAVIGATE</h4>
 
 
               <ul>
@@ -29,9 +29,9 @@
 
 
 
-            <div class="footer-link-list store-help">
+            <div class="footer-link-list store-help" style="margin-top:0; text-align:left;">
 
-                <h4>STORE HELP</h4>
+                <h4 style="margin-top:0; text-align:left;">STORE HELP</h4>
 
 
               <ul>
@@ -51,39 +51,6 @@
                   <li><a href="http://driverslittlehelper.com/pages/press">PRESS</a></li>
 
               </ul>
-            </div>
-
-
-
-
-
-            <div class="spread-the-word">
-
-                <h4>Help spread the word!</h4>
-
-
-
-                <p>Share your experience with our community of parents.</p>
-
-
-
-
-
-                <a class="footer-share-icon footer-like" href="#" onclick="
-                  ga('send', 'event', 'Social', 'Facebook', 'Share');
-                  window.open('//www.facebook.com/sharer.php/', 'name', 'width=600,height=400'); return false;
-                ">Share</a>
-
-
-                <a class="footer-share-icon footer-tweet" href="#" onclick="
-                  ga('send', 'event', 'Social', 'Twitter', 'Share');
-                  window.open('//twitter.com/share?url=http://driverslittlehelper.com&amp;text=I found an easy way to help keep kids safe in their car seats. Check out the Driver’s Little Helper car seat monitor.%20', 'name', 'width=600,height=400');
-                  return false;
-                "> Tweet</a>
-
-
-
-
             </div>
 
           </footer>
