@@ -24,6 +24,8 @@
 
                   <li><a href="http://driverslittlehelper.com/pages/get-the-app">GET THE APP</a></li>
 
+                  <li><a href="/">SUPPORT</a></li>
+
               </ul>
             </div>
 
