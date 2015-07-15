@@ -1,4 +1,4 @@
-            </div>
+        </div>
         <div class="footer-wrapper" style="border-top:1px solid #d7dcde;">
           <footer class="main-footer showing-2-lists" style="border-top:0;">
 
