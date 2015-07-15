@@ -10,19 +10,19 @@
 
                   <ul>
 
-                      <li><a href="/">HOME</a></li>
+                      <li><a href="http://driverslittlehelper.com">HOME</a></li>
 
-                      <li><a href="/pages/how-it-works">HOW IT WORKS</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/how-it-works">HOW IT WORKS</a></li>
 
-                      <li><a href="/collections/car-seat-monitor-products">PRODUCTS</a></li>
+                      <li><a href="http://driverslittlehelper.com/collections/car-seat-monitor-products">PRODUCTS</a></li>
 
-                      <li><a href="/pages/about-us">ABOUT US</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/about-us">ABOUT US</a></li>
 
-                      <li><a href="/blogs/news">BLOG</a></li>
+                      <li><a href="http://driverslittlehelper.com/blogs/news">BLOG</a></li>
 
-                      <li><a href="/pages/contact">CONTACT</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/contact">CONTACT</a></li>
 
-                      <li><a href="/pages/get-the-app">GET THE APP</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/get-the-app">GET THE APP</a></li>
 
                   </ul>
                 </div>
@@ -36,19 +36,19 @@
 
                   <ul>
 
-                      <li><a href="/pages/faqs">FAQ</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/faqs">FAQ</a></li>
 
-                      <li><a href="/pages/shipping">SHIPPING</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/shipping">SHIPPING</a></li>
 
-                      <li><a href="/pages/warranty">WARRANTY</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/warranty">WARRANTY</a></li>
 
-                      <li><a href="/pages/returns">RETURNS</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/returns">RETURNS</a></li>
 
-                      <li><a href="/pages/legal">PRIVACY POLICY</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/legal">PRIVACY POLICY</a></li>
 
-                      <li><a href="/pages/terms-of-service">TERMS OF SERVICE</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/terms-of-service">TERMS OF SERVICE</a></li>
 
-                      <li><a href="/pages/press">PRESS</a></li>
+                      <li><a href="http://driverslittlehelper.com/pages/press">PRESS</a></li>
 
                   </ul>
                 </div>
