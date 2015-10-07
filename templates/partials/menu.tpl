@@ -5,14 +5,14 @@
         <span class="icon-bar"></span>
     </button>
     <div>
-        <a href="{relative_path}/">
-            <img class="{brand:logo:display} forum-logo" src="{brand:logo}" />
+        <a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
+            <img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" src="{brand:logo}" />
         </a>
-        <!-- IF showSiteTitle -->
+        <!-- IF config.showSiteTitle -->
         <a href="{relative_path}/">
             <h1 class="navbar-brand forum-title">{title}</h1>
         </a>
-        <!-- ENDIF showSiteTitle -->
+        <!-- ENDIF config.showSiteTitle -->
 
         <div component="navbar/title" class="visible-xs">
             <span></span>
@@ -26,7 +26,7 @@
         <!-- BEGIN navigation -->
         <!-- IF function.displayMenuItem, @index -->
         <li class="{navigation.class}">
-            <a href="{relative_path}{navigation.route}" title="{navigation.title}" id="{navigation.id}" target="{navigation.properties.target}">
+            <a href="{relative_path}{navigation.route}" title="{navigation.title}" id="{navigation.id}"<!-- IF navigation.properties.targetBlank --> target="_blank"<!-- ENDIF navigation.properties.targetBlank -->>
                 <!-- IF navigation.iconClass -->
                 <i class="fa fa-fw {navigation.iconClass}"></i>
                 <!-- ENDIF navigation.iconClass -->
@@ -40,15 +40,15 @@
         <!-- END navigation -->
     </ul>
 
-    <!-- IF loggedIn -->
+    <!-- IF config.loggedIn -->
     <ul id="logged-in-menu" class="nav navbar-nav navbar-right pull-right">
-        <li class="notifications dropdown text-center hidden-xs">
+        <li class="notifications dropdown text-center hidden-xs" component="notifications">
             <a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
-                <i class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
+                <i component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="notif_dropdown">
                 <li>
-                    <ul id="notif-list">
+                    <ul id="notif-list" component="notifications/list">
                         <li>
                             <a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
                         </li>
@@ -59,29 +59,29 @@
             </ul>
         </li>
 
-        <!-- IF searchEnabled -->
+        <!-- IF config.searchEnabled -->
         <li class="visible-xs">
             <a href="{relative_path}/search">
                 <i class="fa fa-search fa-fw"></i> [[global:search]]
             </a>
         </li>
-        <!-- ENDIF searchEnabled -->
+        <!-- ENDIF config.searchEnabled -->
 
         <li class="visible-xs">
             <a href="{relative_path}/notifications" title="[[notifications:title]]">
-                <i class="notification-icon fa fa-bell-o fa-fw" data-content="0"></i> [[notifications:title]]
+                <i component="notifications/icon" class="notification-icon fa fa-bell-o fa-fw" data-content="0"></i> [[notifications:title]]
             </a>
         </li>
 
 
-        <!-- IF !disableChat -->
+        <!-- IF !config.disableChat -->
         <li class="chats dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="[[global:header.chats]]" id="chat_dropdown" component="chat/dropdown">
                 <i component="chat/icon" class="fa fa-comment-o fa-fw"></i> <span class="visible-xs-inline">[[global:header.chats]]</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="chat_dropdown">
                 <li>
-                    <ul id="chat-list">
+                    <ul id="chat-list" component="chat/list">
                         <li>
                             <a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:chats.loading]]</a>
                         </li>
@@ -90,16 +90,16 @@
                 <li class="notif-dropdown-link"><a href="{relative_path}/chats">[[modules:chat.see_all]]</a></li>
             </ul>
         </li>
-        <!-- ENDIF !disableChat -->
+        <!-- ENDIF !config.disableChat -->
 
         <li id="user_label" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
-                <img id="user-header-picture" src="{user.picture}"/>
+                <img component="header/userpicture" src="{user.picture}"/>
             </a>
-            <ul id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
+            <ul component="header/usercontrol" id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
                 <li>
-                    <a id="user-profile-link" href="{relative_path}/user/{user.userslug}">
-                        <i class="fa fa-fw fa-circle status {user.status}"></i> <span id="user-header-name">{user.username}</span>
+                    <a component="header/profilelink" href="{relative_path}/user/{user.userslug}">
+                        <i class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
                     </a>
                 </li>
                 <li role="presentation" class="divider"></li>
@@ -124,7 +124,7 @@
                     </a>
                 </li>
                 <li role="presentation" class="divider"></li>
-                <li id="logout-link">
+                <li component="user/logout">
                     <a href="#"><i class="fa fa-fw fa-sign-out"></i><span> [[global:logout]]</span></a>
                 </li>
             </ul>
@@ -147,14 +147,15 @@
             </a>
         </li>
     </ul>
-    <!-- ENDIF loggedIn -->
-    <!-- IF searchEnabled -->
+    <!-- ENDIF config.loggedIn -->
+    <!-- IF config.searchEnabled -->
     <ul class="nav navbar-nav navbar-right">
         <li>
             <form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET" action="">
                 <div class="hide" id="search-fields">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="[[global:search]]" name="query" value="">
+                        <a href="#"><i class="fa fa-gears fa-fw advanced-search-link"></i></a>
                     </div>
                     <button type="submit" class="btn btn-default hide">[[global:search]]</button>
                 </div>
@@ -162,7 +163,7 @@
             </form>
         </li>
     </ul>
-    <!-- ENDIF searchEnabled -->
+    <!-- ENDIF config.searchEnabled -->
 
     <ul class="nav navbar-nav navbar-right pull-right">
         <li>
@@ -178,7 +179,7 @@
             <i class="fa fa-angle-up pointer fa-fw pageup"></i>
 
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <span id="pagination"></span>
+                <span class="pagination-text"></span>
             </a>
 
             <i class="fa fa-angle-down pointer fa-fw pagedown"></i>
